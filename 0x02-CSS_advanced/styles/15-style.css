@@ -395,13 +395,10 @@ template {
     --section-title-margin: 0;
     --section-title-color: var(--color-black);
 
-/* ================== UNIVERSAL BOX-SIZING RULE ===================*/
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
 }
 
+*, *:before, *:after {
+  box-sizing: border-box;
 }
 
 html {
