@@ -397,8 +397,8 @@ template {
 
 /* ================== UNIVERSAL BOX-SIZING RULE ===================*/
 *,
-*::before,
-*::after {
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
