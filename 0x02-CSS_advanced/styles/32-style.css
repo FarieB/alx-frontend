@@ -8,7 +8,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
-html {
+ html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -347,116 +347,122 @@ template {
 [hidden] {
   display: none;
 }
-        /* =======================
-            End of normalize.css 
-        =========================*/
 
-/* ================== variables for colors =====================*/
+/* =============================================================================
+                            END OF NORMALISE.CSS 
+================================================================================*/
+
+
+
+
+
+/* ==================== COLORS =========================*/
 :root {
-    --color-primary: #d73953;
-    --color-black : #090909;
-    --color-white : #ffffff;
+    --color-primary: #d73953; 
+    --color-black: #090909;
+    --color-white: #ffffff;
     --color-light-grey: #f3f3f3;
     --color-dark-grey: #353535;
     --text-color: var(--color-black);
-    --section-title-color:var(--color-black);
 
-/* ================== variables for font family =====================*/
-    --font-family-base: "Open Sans" "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-family-title: "Raleway" "Helvetica Neue", Helvetica, Arial, sans-serif;
+/* =================== FONT FAMILY ========================*/
+    --font-family-base: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+    --font-family-title: "Raleway", Helvetica Neue, Helvetica, Arial, sans-serif;
 
-/* ============== variables for fonts sizes =================*/
+/* ==================== FONT SIZES ========================= */
     --font-size-small: 1.2rem;
     --font-size-medium: 1.6rem;
     --font-size-large: 1.8rem;
     --font-size-x-large: 2.3rem;
     --font-size-xx-large: 4.8rem;
 
-/* ================ variables for font-weight ======================= */
+/* =================== FONT WEIGHT =========================== */
     --font-weight-regular: 400;
     --font-weight-bold: 700;
 
-/* ================== Variables for line heights ===================*/
-    --line-height-small:1.2;
-    --line-height-base:1.5;
-    --line-height-big:1.8; 
+/* =================== LINE HEIGHTS ========================== */
+    --line-height-small: 1.2;
+    --line-height-base: 1.5;
+    --line-height-big: 1.8;
 
-/* ================= Variables for alignment =================*/
-    --section-header-align:center;
-    --section-footer-align:center; 
+/* ================== SECTION HEADER ALIGNMENT================== */
+    --section-header-align: center;
 
-/* ================= Variables for transformations ==================*/    
-    --section-tagline-transform:uppercase;
+/* ===================TEXT TRANSFORMATION =========================*/
+    --section-tagline-transform: uppercase;
 
- /* ================ Variables for margins ================== */   
+/* =================== VARIABLES FOR MARGIN =======================*/
     --section-title-margin: 0;
-    --section-tagline-margin: 0;
+    --section-title-color: var(--color-black);
 
-/* ================= variables for padding ================== */
-    --section-padding:5rem;
-    --section-header-padding:0 0 3rem;
-    --section-body-padding:0 0 3rem;
-    --section-footer-padding:3rem 0 0;
-    --footer-padding:5rem 0 1rem;
+/* ==================== PADDING SECTIONS =====================*/
+    --section-padding: 5rem 0;
+    --section-header-padding: 0 0 3rem;
+    --section-body-padding: 0 0 3rem;
+    --section-footer-padding: 3rem 0 0;
+    --section-footer-align: center;
+    --footer-padding: 5rem 0 1rem;
 
-/*=========== all menus custom properties =====================*/ 
+/* =================== CUSTOMIZING NAVBAR ===================*/
     --nav-item-font-family: var(--font-family-title);
     --nav-item-font-weight: var(--font-weight-bold);
     --nav-item-font-size: var(--font-size-medium);
     --nav-item-letter-spacing: 0.04rem;
     --nav-item-display: inline-block;
-    --nav-item-margin: 0 0  3rem;
+    --nav-item-margin: 0 0 3rem;
     --nav-item-link-hover: var(--color-white);
 
-/* ====================== Button Styling ========================= */
-  --button-display: inline-block;
-  --button-padding: 1.5rem 3rem;
-  --button-border: 0.2rem solid var(--color-primary);
-  --button-color: var(--color-black);
-  --button-text-decoration: none;
-  --button-font-size: var(--font-size-large);
-  --button-hover-color: var(--color-white);
-  --button-hover-text-decoration: none;
-  --button-hover-background: var(--color-primary);
+/* ================== GRID STYLING ==========================*/
+    --section-tagline-margin: 0;
 
-/*============header===================*/
---header-padding: 4rem 0 0;
---heder-logo-position: relative;
---header-logo-link-display: inline-block;
---header-logo-link-position: absolute;
---header-logo-link-top: -1rem;
---header-logo-link-left: 0;
+/* ================== ADDING BORDER TO THE BUTTON ===========*/
+    --button-display: inline-block;
+    --button-padding:1.5rem 3rem;
+    --button-border: 0.2rem solid var(--color-primary);
+    --button-color: var(--color-black);
+    --button-text-decoration: none;
+    --button-font-size: var(--font-size-large);
+    --button-hover-color: var(--color-white);
+    --button-hover-text-decoration: none;
+    --button-hover-background: var(--color-primary);
 
-/*================== transtion ================*/
-  --transition-duration: .3s;
-  --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
+/* ===================HEADER AND MENU NAVIGATION BAR ============*/
+    --header-padding: 4rem 0 0;
+    --header-logo-position: relative;
+    --header-logo-link-display: inline-block;
+    --header-logo-link-position: absolute;
+    --header-logo-link-top: -1rem;
+    --header-logo-link-left: 0;
+
+/* ================= INCORPOATING TRANSITIONS ===================*/
+    --transition-duration: .3s;
+    --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
+
 }
 
 *, *:before, *:after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
-    font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
 }
-
 
 body {
-    background-color: var(--text-color); 
-    font-family: var(--font-family-base);
-    font-size: var(--font-size-medium);
-    font-weight: var(--font-weight-regular);
-    line-height: var(--line-height-base);
+  background-color: var(--text-color);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-base);
 }
-
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-family-title);
-    font-weight: var(--font-weight-bold);
+  font-family: var(--font-family-title);
+  font-weight: var(--font-weight-bold);
 }
 
-/*============= header selector====================*/
+/* =====================HEADER CLASS SELECTOR ==============*/
 .header {
   padding: var(--header-padding);
 }
@@ -471,26 +477,30 @@ h1, h2, h3, h4, h5, h6 {
   top: var(--header-logo-link-top);
   left: var(--header-logo-link-left);
 }
-/* =========== anchor links ===================== */
 
-a:link {
-    background-color: var(--text-color);
-    text-decoration: none;
+/* =================== ANCHOR ELEMENTS WITH HYPERLINK =================== */
+a:link { 
+  background-color: var(--text-color);
+  text-decoration: none;
+  
 }
 
+/* ================== VISITED STATE FOR ANCHOR ELEMENTS ================= */
 a:visited {
-    font-style: italic;
+  font-style: italic;
 }
 
+/* ==================== HOVER STATE FOR ANCHOR ELEMENTS ================== */
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
+/* ==================== ACTIVE STATE FOR THE LINK ======================== */
 a:active {
-    background-color: var(--color-light-grey);
+  background-color: var(--color-light-grey);
 }
 
-/*============== Button ===========*/
+/* ================== BUTTON ===============================================*/
 .button {
   display: var(--button-display);
   padding: var(--button-padding);
@@ -501,79 +511,79 @@ a:active {
 }
 
 .button:hover {
-    color: var(--button-hover-color);
-    text-decoration: var(--button-hover-text-decoration);
-    background-color: var(--button-hover-background);
-    transition-duration: var(--transition-duration);
-    transition-property: color, background-color; 
+  color: var(--button-hover-color);
+  text-decoration: var(--button-hover-text-decoration);
+  background-color: var(--button-hover-background);
+  transition-duration: var(--transition-duration);
+  transition-property: color, background-color; 
 }
 
 .visually-hidden {
-    display: none;
+  display: none;
 }
 
 .card-category {
-    background-color: var(--color-primary);
+  background-color: var(--color-primary);
 }
 
-.section{
+.section {
   padding: var(--section-padding);
 }
 
-.section-header{
-    text-align: var(--section-header-align);
-    padding: var(--section-header-padding);
+.section-header {
+  text-align: var(--section-header-align);
+  padding: var(--section-header-padding);
 }
 
-.section-body{
+.section-body {
   padding: var(--section-body-padding);
 }
 
-.section-footer{
+.section-footer {
   padding: var(--section-footer-padding);
   text-align: var(--section-footer-align);
 }
 
-.section-title{
-    font-family: var(--font-family-title);
-    font-size: var(--font-size-xx-large);
-    font-weight: var(--font-weight-bold);
-    margin: var(--section-title-margin);
-    color: var(--section-title-color);
+.section-title {
+  font-family: var(--font-family-title);
+  font-size: var(--font-size-xx-large);
+  font-weight: var(--font-weight-bold);
+  margin: var(--section-title-margin);
+  color: var(--section-title-color);
 }
 
 .section-tagline {
-    background-color: var(--color-primary);
-    font-family: var(--font-family-title);
-    text-transform: var(--section-tagline-transform);
-    font-weight: var(--font-weight-bold)
-    margin: var(--section-tagline-margin);
-
+  background-color: var(--color-primary);
+  font-family: var(--font-family-title);
+  text-transform: var(--section-tagline-transform);
+  font-weight: var(--font-weight-bold);
+  margin: var(--section-tagline-margin);
 }
 
-.container{
-    width: 960px;
-    margin-right: auto;
-    margin-left: auto;
+.container {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.footer{
+.footer {
   padding: var(--footer-padding);
 }
 
-/*=============== menus =============== */
-.navbar-menu{
+/* =============== NAVIGATION MENUS =====================*/
+.navbar-menu {
   float: right;
 }
 
-.nav{
+.nav {
   margin: 0;
   padding: 0;
   list-style: none;
   text-align: center;
+  
 }
 
-.nav .nav-item{
+.nav .nav-item {
   font-family: var(--nav-item-font-family);
   font-weight: var(--nav-item-font-weight);
   font-size: var(--nav-item-font-size);
@@ -582,9 +592,13 @@ a:active {
   margin: var(--nav-item-margin);
 }
 
-.nav .nav-link{
+.nav .nav-link {
   display: block;
   padding: 0.5rem 1rem;
+}
+
+.nav .nav-link:hover {
+  color: var(--color-white);
 }
 
 .nav .nav-link::before {
@@ -595,16 +609,13 @@ a:active {
   background-color: var(--color-white);
   width: 0;
   height: 0.2rem;
-  transition: var(--transition-duration) var(--transition-cubic-bezier);
+  transition:  var(--transition-duration) var(--transition-cubic-bezier);
+  
 }
 
 .nav .nav-item:hover .nav-link::before {
-    background-color: var(--color-primary);
-    width: 100%;
-}
-
-.nav .nav-link:hover {
-  color: var(--color-white);
+  background-color: var(--color-primary);
+  width: 100%;
 }
 
 ul.row {
@@ -621,15 +632,34 @@ ul.row {
   width: 50%;
 }
 
-/* ========= Footer ========== */
 .footer-copyright {
   margin: 0;
   font-size: var(--font-size-small);
   color: var(--text-color);
 }
 
-.footer ul {
+.footer ul{
   text-align: right;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ============== SIMPLIFYING THE COL-SELECTOR ==========================*/
+[class^="col-"] {
+  float: left;
+  padding: 0.5rem;
+}
+
+/* ================ AADING DARK THEMES TO SECTIONS =======================*/
+[data-section-theme="dark"] {
+  --text-color: var(--color-white);
+  --section-title-color: var(--color-white);
+  background-color: var(--color-black);
+  --button-color: var(--color-white);
 }
 
 .footer-address {
@@ -644,45 +674,23 @@ ul.row {
   fill: var(--text-color);
 }
 
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/*================== Simplify the column (col-) selector */
-[class^="col-"] {
-  float: left;
-  padding: 0.5rem;
-}
-
-/*================ Add a dark theme to sections ===================== */
-[data-section-theme="dark"] {
-    --text-color: var(--color-white);
-    --section-title-color: var(--color-white);
-    --button-color: var(--color-white);
-    background-color: var(--color-black);
-
-}
-
-/* ============ Services ============== */
+/* ================== CARD SERVICES =================*/
 .card-services .card-title {
-    margin: 0;
+  margin: 0;
 }
 
 .card-services a {
-    display: block;
-    padding: 2rem;
-    background-color: var(--color-light-grey);
+  display: block;
+  padding: 2rem;
+  background-color: var(--color-light-grey);
 }
 
 .card-services a:hover {
-    color: var(--color-white);
-    background-color: var(--color-primary);
-    text-decoration: none;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  text-decoration: none;
 }
 
-/*============== Testimonial =================*/
 .card-testimonial {
   text-align: center;
 }
@@ -699,27 +707,23 @@ ul.row {
   color: var(--color-primary);
 }
 
-/*================= section hero ===============*/
-.section-hero {
-    background-size: 90rem auto;
+.card-testimonial .card-quote {
+  position: relative;
 }
 
-.section-hero .section-title {
-    margin-bottom: 5rem;
+.card-testimonial .card-quote::before {
+  content: "\201C";
+  position: absolute;
+  top: -4.5rem;
+  left: -1rem;
+  color: #efeded;
+  font-size: 10rem;
+  z-index: -1;
 }
 
-.section-hero .section-inner {
-    padding: 10rem 40rem 2rem 0;
-}
-
-/*==================== Work =====================*/
 .card-work .card-outer {
   position: relative;
   overflow: hidden;
-}
-
-.card-work:hover .card-outer {
-  transform: scale(0.95);
 }
 
 .card-work .card-image img {
@@ -729,24 +733,17 @@ ul.row {
   vertical-align: bottom;
 }
 
-.card-work:hover .card-image {
-  transform: scale(1.2);
-  transition: var(--transition-duration) var(--transition-cubic-bezier);
-
-}
-
 .card-work .card-inner {
   position: absolute;
   top: -0.1rem;
   left: -0.1rem;
   right: -0.1rem;
   z-index: 1;
-  transition: var(--transition-duration) var(--transition-cubic-bezier)
-;
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work:hover .card-inner {
-  background-color: rgb(0,0,0,0.7);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .card-work .card-title {
@@ -757,18 +754,20 @@ ul.row {
   position: relative;
 }
 
-.card-work .card-title a {
+.card-work .card-title a,
+.card-work a {
   display: block;
   text-decoration: none;
   padding-top: 45%;
 }
 
-.card-work .card-title a::after {
+.card-work .card-title a::after,
+.card-work a::after {
   position: absolute;
   top: 0;
-  right: 0;
-  left: 0;
   bottom: 0;
+  left: 0;
+  right: 0;
   content: "";
 }
 
@@ -776,17 +775,24 @@ ul.row {
   opacity: 1;
 }
 
-/*============= Testimonial ==================*/
-.card-testimonial .card-quote {
-  position: relative;
+.card-work:hover .card-image {
+  transform: scale(1.2);
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
-.card-testimonial .card-quote::before {
-  content: "\201C";
-  position: absolute;
-  top:-4.5rem;
-  left: -1rem;
-  color: #efeded;
-  font-size: 10rem;
-  z-index: -1;
+.card-work:hover .card-outer {
+  transform: scale(0.95);
+}
+
+/* =====================SECTION HERO =======================*/
+.section-hero {
+  background-size: 90rem auto;
+}
+
+.section-hero .section-title {
+  margin-bottom: 5rem;
+}
+
+.section-hero .section-inner {
+  padding: 10rem 40rem 2rem 0;
 }
